@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbloms fotbollshotell</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="bilder/logofotboll.png" alt="logo">
+        <ul>
+            <li><a href="index.html">Välkommen</a></li>
+            <li><a href="#">Kontakta</a></li>
+            <li><a href="boka.html">Boka</a></li>
+            <li><a href="hitta.html">Hitta</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="bilder/header.jpg" alt="header">
+    </header>
+
+    <main>
+        <section>
+            <h1>Boka ett rum</h1>
+            <p>Vänligen fyll i formuläret för att boka ett rum</p>
+        </section>
+
+        <div class="booking">
+            <form action="https://httpbin.org/post" method="post" class="bookingform">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="checkin">Incheckningsdatum:</label>
+                <input type="date" id="checkin" name="checkin" required>
+
+                <label for="checkout">Utcheckningsdatum:</label>
+                <input type="date" id="checkout" name="checkout" required>
+
+                <label for="roomtype">Rumstyp:</label>
+                <select id="roomtype" name="roomtype" required>
+                    <option value="" disabled selected>Välj en rumstyp</option>
+                    <option value="single">Enkelrum</option>
+                    <option value="double">Dubbelrum</option>
+                    <option value="suite">Svit</option>
+                </select>
+
+                <button type="submit">Boka nu</button>
+            </form>
+
+            <div class="bookingbild">
+                <img src="bilder/rum3.jpg" alt="booking">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Tel: 012-345678</li>
+            <li>Södra adressgatan 1</li>
+            <li><a href="#">info@sandblomshotell.se</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
